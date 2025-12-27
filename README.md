@@ -19,15 +19,15 @@ root.geometry("100x100")
 
 root.title("Slider Example")
 
-# Slider for V1 (0 to 5 volts)
+
 v1_slider = tk.Scale(root, from_=0, to=5, resolution=0.01, orient='horizontal', label="V1")
 v1_slider.pack()
 
-# Slider for V2 (0 to 5 volts)
+
 v2_slider = tk.Scale(root, from_=0, to=5, resolution=0.01, orient='horizontal', label="V2")
 v2_slider.pack()
 
-# Button to print values
+
 def show_values():
     print("V1 =", v1_slider.get())
     print("V2 =", v2_slider.get())
@@ -107,6 +107,8 @@ tk.Button(root,text="click for checking",command=check_air, bg="black", fg="whit
     
 
 root.mainloop()
+
+
 
 
 
